@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "netherite",
+  "version": "${version}",
+
+  "name": "Netherite Crafting",
+  "description": "A mod that gives more netherite crafting options.",
+  "authors": [
+    "LordEnder_Kitty"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.enderkitty.netherite.Netherite"
+    ],
+    "client": [
+      "net.enderkitty.netherite.NetheriteClient"
+    ]
+  },
+  "mixins": [
+    "netherite.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
